@@ -16,10 +16,6 @@ font-family: 'Roboto', sans-serif;
     font-family: 'Roboto', sans-serif;  
 }
 
-a {
-    text-decoration: none;
-}
-
 header {
     background-color: #EAC926;
     width: 100%;
@@ -31,19 +27,28 @@ img {
 }
 
 .header-logo{
-    width: 45%;
+    width: 40%;
     margin-right: 80%; /*Esto despues se tiene que modificar*/
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 .header-title{
     text-align: center;
     font-size: 12px;
     font-weight: lighter;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 li a {
+    text-decoration: none;
     color: black;
     font-size: 12px;
+}
+
+.header-lista ul{
+    margin-bottom: 20px;
 }
 
 .burger-menu{
