@@ -10,6 +10,7 @@ Familia: 'Roboto’​
 font-family: 'Roboto', sans-serif;
 */
 
+
 * {
     box-sizing: border-box;     
 }
@@ -80,6 +81,14 @@ li a {
 }
 
 /*main*/
+.div-banner{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.img-banner{
+    width: 100%;
+}
 .main{
     background-color: #ebebeb;
     padding-bottom: 15px;
@@ -160,6 +169,98 @@ li a {
     margin-left: 5px;
 }
 
+/*Formulario*/
+.main-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    min-height: 100vh;
+
+}
+/* display: grid y gap importante*/
+.formulario-contenedor{
+    margin: 0;
+    width: 375px;
+    max-width: 500px;
+    padding: 2em 1em;
+    text-align:left;
+    display: grid;
+    gap: 1.5em;
+    border: 2px solid #d4d1d1;
+}
+.input-formulario{
+    width: 100%;
+    font-size: 1rem;
+    padding: .6em .3em;
+    font-family: 'Roboto', sans-serif;
+}
+.boton-formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.register-submit{
+    width: 150px;
+    background-color:  #1259c3;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+/*-----------------------*/
+/*Login*/
+.main-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    min-height: 100vh;
+}
+.form-login{
+    margin: auto;
+    border: 2px solid #d4d1d1;
+    width: 90%;
+    max-width: 400px;
+    padding: 4em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+
+}
+
+.form-container{
+    display: grid;
+    gap: 2em;
+}
+
+.form-group{
+    position: relative;
+}
+.input-login{
+    width: 100%;
+    font-size: 1rem;
+    padding: .6em .3em;
+    font-family: 'Roboto', sans-serif;
+}
+.form-submit{
+    background-color:  #1259c3;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+/*--------------------------*/
+
 @media (min-width: 768px){
     .header-logo{
         width: 200px;
@@ -200,6 +301,7 @@ li a {
     
 }
 
+
 @media (min-width: 1200px){
     .header-logo{
         width: 250px;
@@ -233,6 +335,18 @@ li a {
         display: flex;
         justify-content: space-around;
         width: 1300px;
+    }
+
+    .div-footer-contenedor{
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+    }
+    .section-footer{
+        width: 30%;
+
     }
       
 

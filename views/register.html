@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--vincular el CSS con link-->
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!--fontawesome para los iconos archivo .js javascript-->
+    <script src="https://kit.fontawesome.com/f7e0d98e38.js" crossorigin="anonymous"></script>
+    <title>Formulario</title>
+
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <div class="main-mercadoliebre">
+            <img class="header-logo" src="./img/logo-mercado-liebre.svg" alt="" />
+            </div>
+            <h3 class="header-title"><i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</h3>
+
+        </div>
+
+        <nav class="header-lista">
+            <ul class="left-navbar">
+                <li><a href="#">Oferta</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+
+            <ul class="right-navbar">
+                <li><a href="./formulario">Creá tu cuenta <i class="fa-solid fa-credit-card"></i></a></li>
+                <li><a href="./ingresar">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <a href="#" class="burger-menu"><i class="fa-solid fa-bars"></i></a>
+
+    </header>
+    <main class="main-formulario">
+        <form class="form">
+            <div class="formulario-contenedor">
+            <input class="input-formulario" placeholder="Nombre y apellido" type="text" name="nombre" id="nombre">
+            <input class="input-formulario" placeholder="Nombre de usuario" type="text" name="usuario" id="usuario">
+            <input class="input-formulario" placeholder="E-mail" type="email" name="email">
+            <h4>Fecha de nacimiento</h4>
+            <input class="input-formulario" type="date" name="fecha" />
+            <input class="input-formulario" placeholder="Domicilio" type="text" name="domicilio" id="domicilio">
+            <h4>Perfil del usuario</h4>
+            <div>
+            <input type="radio"  name="usuario" value="Comprador"/>
+            <label for="comprador">Comprador</label>
+
+            <input type="radio" name="usuario" value="Vendedor"/>
+            <label for="vendedor">Vendedor</label>
+            </div>
+            <h4>Intereses</h4>
+                <div>
+                    <input type="checkbox" name="electro" value="Primero" />
+                    <label for="electro">Electro</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="moda" value="Segundo" />
+                    <label for="moda">Moda</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="hogar" value="Tercera" />
+                    <label for="hogar">Hogar</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="jugueteria" value="Cuarta" />
+                    <label for="jugueteria">Jugueteria</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="vida" value="Quinta" />
+                    <label for="vida">Vida sana</label>
+                    </div>
+
+            <h4>Foto de Usuario</h4>
+            <input type="file" name="archivo" accept=".jpg" multiple />
+            <h4>Contraseña</h4>
+            <input class="input-formulario" placeholder="Contraseña" type="password" name="clave">
+            <input class="input-formulario" placeholder="Confirmar contraseña" type="password" name="clave">
+            <div class="boton-formulario">
+                <input class="register-submit" type="submit" value="Enviar formulario">
+                <input class="register-submit" type="reset" value="resetear">
+            </div>
+            </div>
+
+        </form>
+
+    </main>
+    <footer></footer>
+    
+</body>
+</html>
