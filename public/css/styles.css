@@ -12,10 +12,11 @@ font-family: 'Roboto', sans-serif;
 
 
 * {
-    box-sizing: border-box;     
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;     
 }
 body{
-    font-family: 'Roboto', sans-serif; 
+    
     margin: 0;
     padding: 0;
 
@@ -114,6 +115,17 @@ li a {
     justify-content: space-between;
 
 }
+.main-section h3{
+    align-self:flex-start;
+    padding-left: 7%;
+    color: #666;
+
+}
+.section-titulo{
+    display: flex;
+    justify-content: end;
+    
+}
 
 .section-article{
     display: flex;
@@ -128,31 +140,55 @@ li a {
 .article-div{
     width: 70%;    
 }
+/*icono*/
+.circulo{
+    width: 35px;
+    height: 35px;
+    opacity: value;
+    border-radius: 50%;
+    border: 2px solid rgb(152, 189, 152);
+    }
+
 .figura{
     display: flex;
     justify-content: flex-end;
+    opacity: value;
 }
+.fa-truck {
+    margin-top: 10px;
+    margin-right: 6px;
+    position: absolute;
+    color: rgb(152, 189, 152);
+
+}
+
 .parrafos{
     display: flex;
-    width: 60%;
-    justify-content: space-around;
-       
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;       
 }
 .precio{
     font-weight: bold;
+    color: black;
+    font-size: 20px;
 }
 .titulo-inferior{
     color: #7a7a7a;
-    
+    font-size: 20px;    
 }
 
 .descuento-productos{
+    display: flex;
+    align-self: center;
     color: #666;
+    font-size: 15px;
+    text-align: center;
 
 }
 .titulo-producto{
     display: flex;
-    width: 60%;
+    width: 100%;
     justify-content: space-around;
     padding-top: 15px;
     padding-bottom: 20px;
@@ -163,6 +199,13 @@ li a {
 .footer{
     padding-top: 25px;
 }
+.div-footer-contenedor{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
 .section-footer {
     text-align: center;
     margin-bottom: 30px;
@@ -171,6 +214,11 @@ li a {
 .section-footer i{
     font-size: 2em;
     color: #1259c3;
+}
+
+.section-footer i:hover{
+    color: #424242;
+    cursor: pointer;
 }
 .section-footer p{
     font-size: 12px;
@@ -282,6 +330,9 @@ li a {
     .header-logo{
         width: 200px;
     }
+    .header-logo{
+        width: 130px;
+    }
 
     .main-header-top-bar{
         display: flex;
@@ -294,12 +345,12 @@ li a {
         height: 34px;
     }
     .buscador input{
-        width: 160px;
-        height: 20px;
+        width: 200px;
+        height: 30px;
     }
 
     .buscador button{
-        height: 20px;
+        height: 30px;
 
     }
     .header-title{
@@ -311,7 +362,8 @@ li a {
     }
     .header-lista{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        padding-left: 7%;
     }
     .header-lista ul{
         display: flex;
@@ -331,6 +383,16 @@ li a {
         flex-direction: row;
         width: 650px;
     }
+    .div-footer-contenedor{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        padding: 30px;
+    }
+    .section-footer{
+        width: 75%;
+    }
+
     
 }
 
@@ -357,15 +419,18 @@ li a {
         height: 30px;
     }
     .buscador input{
-        width: 260px;
-        height: 30px;
+        width: 400px;
+        height: 35px;
     }
 
     .buscador button{
-        height: 30px;
+        height: 35px;
 
     }
     .header-lista{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         margin-top: 30px;
     }
     .header-lista li{
